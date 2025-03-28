@@ -33,10 +33,9 @@ const LoginScreen = ({ navigation }) => {
             </View>
 
             <SearchBox 
-                placeHolder="Username" 
+                placeHolder="Username/Phone number/Email" 
                 value={username} 
                 onChangeText={setUsername}
-                icon="person"
                 containerStyle={styles.input}
             />
             
@@ -45,7 +44,6 @@ const LoginScreen = ({ navigation }) => {
                 secure={true}
                 value={password}
                 onChangeText={setPassword}
-                icon="lock"
                 containerStyle={styles.input}
             />
             
